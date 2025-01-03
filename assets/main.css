@@ -1,0 +1,243 @@
+@import "./base.css";
+
+.text-center {
+  text-align: center;
+
+  @media (max-width: 768px) {
+    text-align: left;
+  }
+}
+
+._container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.features {
+  display: flex !important;
+  flex-direction: row;
+}
+
+@media (max-width: 950px) {
+  .features {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  ._container {
+    max-width: 375px !important;
+    margin: auto;
+  }
+}
+
+._container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  background-color: rgba(14, 17, 16, 0.2);
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.header.scrolled {
+  background-color: #0e1110;
+  transition: 0.8s;
+}
+
+.menu-list {
+  padding: 0;
+}
+
+.lang-btn {
+  background-color: #f7b457;
+  border: 2px solid #f7b457;
+  border-radius: 50px;
+  color: #0e1110;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 5px;
+  padding: 8px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.lang-btn.mob {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .lang-btn.mob {
+    display: block;
+  }
+}
+
+.lang-btn:hover {
+  color: white;
+}
+
+p.section-context._mission {
+  margin-bottom: 20px;
+}
+
+.block-mission {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;*/
+  gap: 15px;
+}
+
+.mission-card {
+  /* width: 45% !important; */
+}
+
+.mission-card h3.mission-title {
+  font-size: 48px;
+  color: #f7b457;
+}
+
+/* images */
+
+.main-img {
+  background-image: linear-gradient(to top, #0e1110 0%, transparent 100%),
+    url(/assets/img/hero-section.png);
+}
+
+.main-market-img {
+  background-image: linear-gradient(to top, #0e1110 0%, transparent 70%),
+    linear-gradient(to bottom, #0e1110 0%, transparent 10%),
+    url(/assets/img/commodity-market1.png);
+}
+
+.main-about-img {
+  background-image: linear-gradient(to top, #0e1110 0%, transparent 100%),
+    url(/assets/img/about-us.png);
+}
+
+.about-global-img {
+  background-image: linear-gradient(to top, #0e1110 0%, transparent 70%),
+    linear-gradient(to bottom, #0e1110 0%, transparent 10%),
+    url(/assets/img/group60.png);
+}
+
+.main-trades-img {
+  background-image: linear-gradient(to top, #0e1110 0%, transparent 100%),
+    url(/assets/trades.png);
+}
+
+.main-investments-img {
+  background-image: linear-gradient(to top, #0e1110 0%, transparent 100%),
+    url(/assets/Investments.png);
+}
+
+.investments-market-img {
+  background-image: linear-gradient(to top, #0e1110 0%, transparent 70%),
+    linear-gradient(to bottom, #0e1110 0%, transparent 10%),
+    url(/assets/img/commodity-market.png);
+}
+
+.main-about-img {
+  background-image: linear-gradient(to top, #0e1110 0%, transparent 100%),
+    url(/assets/img/contact.png);
+}
+
+/* /images */
+
+/* FAQ */
+._block-info.faq {
+  height: 600px;
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  ._block-info.faq {
+    height: 750px;
+  }
+}
+
+.faq-container {
+  /* background-color: #222; */
+  margin: auto;
+  max-width: 800px;
+  /* height: 350px; */
+  border-radius: 10px;
+  padding: 20px;
+  color: #f1f1f1;
+}
+
+.faq-item {
+  background-color: #33333397;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-item:hover {
+  /* background-color: #444; */
+}
+
+.faq-item h3 {
+  font-size: 24px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-item p {
+  font-size: 14px;
+  margin-top: 10px;
+  max-height: 0;
+  color: #bcbcbc;
+  font-size: 18px;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  text-align: justify;
+  opacity: 0;
+}
+
+.faq-item .toggle-icon {
+  font-size: 18px;
+  color: #ff9900;
+}
+
+.faq-item.open p {
+  max-height: 100px; /* Ограничиваем высоту для плавного раскрытия */
+  opacity: 1;
+}
+/* /FAQ */
+
+.tradingview-widget-container {
+  height: 100vh;
+}
+
+.menu-list a.nuxt-link-exact-active {
+  color: #ff9900 !important;
+}
+
+.map {
+  text-align: center;
+}
+
+.block-map {
+  width: 800px;
+}
+
+@media (max-width: 500px) {
+  .block-map {
+    width: 350px;
+  }
+
+  .address div {
+    flex-direction: column !important;
+  }
+}
