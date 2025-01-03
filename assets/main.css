@@ -130,12 +130,12 @@ p.section-context._mission {
 
 .main-trades-img {
   background-image: linear-gradient(to top, #0e1110 0%, transparent 100%),
-    url(/assets/trades.png);
+    url(../assets/trades.png);
 }
 
 .main-investments-img {
   background-image: linear-gradient(to top, #0e1110 0%, transparent 100%),
-    url(/assets/Investments.png);
+    url(../assets/Investments.png);
 }
 
 .investments-market-img {
