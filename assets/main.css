@@ -108,24 +108,24 @@ p.section-context._mission {
 
 .main-img {
   background-image: linear-gradient(to top, #0e1110 0%, transparent 100%),
-    url(/assets/img/hero-section.png);
+    url(../assets/img/hero-section.png);
 }
 
 .main-market-img {
   background-image: linear-gradient(to top, #0e1110 0%, transparent 70%),
     linear-gradient(to bottom, #0e1110 0%, transparent 10%),
-    url(/assets/img/commodity-market1.png);
+    url(../assets/img/commodity-market1.png);
 }
 
 .main-about-img {
   background-image: linear-gradient(to top, #0e1110 0%, transparent 100%),
-    url(/assets/img/about-us.png);
+    url(../assets/img/about-us.png);
 }
 
 .about-global-img {
   background-image: linear-gradient(to top, #0e1110 0%, transparent 70%),
     linear-gradient(to bottom, #0e1110 0%, transparent 10%),
-    url(/assets/img/group60.png);
+    url(../assets/img/group60.png);
 }
 
 .main-trades-img {
@@ -141,12 +141,12 @@ p.section-context._mission {
 .investments-market-img {
   background-image: linear-gradient(to top, #0e1110 0%, transparent 70%),
     linear-gradient(to bottom, #0e1110 0%, transparent 10%),
-    url(/assets/img/commodity-market.png);
+    url(../assets/img/commodity-market.png);
 }
 
 .main-about-img {
   background-image: linear-gradient(to top, #0e1110 0%, transparent 100%),
-    url(/assets/img/contact.png);
+    url(../assets/img/contact.png);
 }
 
 /* /images */
