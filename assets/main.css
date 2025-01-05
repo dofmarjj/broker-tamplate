@@ -150,6 +150,11 @@ p.section-context._mission {
     url(../assets/img/contact.png);
 }
 
+.select-account-img {
+  background-image: linear-gradient(to top, #0e1110 0%, transparent 100%),
+    url(../assets/img/account.png);
+}
+
 /* /images */
 
 /* FAQ */
